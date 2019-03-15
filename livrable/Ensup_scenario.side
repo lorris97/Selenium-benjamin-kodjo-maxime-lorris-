@@ -1,0 +1,151 @@
+{
+  "id": "a1a855fe-0bbf-4db5-83a1-e72ee6308850",
+  "version": "2.0",
+  "name": "Ensup_scenario",
+  "url": "https://about.google/intl/fr_fr/",
+  "tests": [{
+    "id": "31213fba-1b78-458a-a475-9b07ed3171c0",
+    "name": "google_presentation_about",
+    "commands": [{
+      "id": "c596acbe-fdd0-4c14-9620-ce20c356898b",
+      "comment": "",
+      "command": "open",
+      "target": "https://about.google/intl/fr_fr/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff49cca5-82bf-4426-944e-6ed72372304a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5fed6fe-47d0-44c7-89b3-85acca08db13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.home",
+      "targets": [
+        ["css=.home", "css:finder"],
+        ["xpath=//main/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e732d46-8f70-4edc-b47b-a5f84fe08b3e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.color-hero:nth-child(4)",
+      "targets": [
+        ["css=.color-hero:nth-child(4)", "css:finder"],
+        ["xpath=//span[4]", "xpath:position"],
+        ["xpath=//span[contains(.,'utiles à tous')]", "xpath:innerText"]
+      ],
+      "value": "utiles à tous"
+    }, {
+      "id": "a8908367-c944-44fb-8924-e6834435f4ee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nos produits",
+      "targets": [
+        ["linkText=Nos produits", "linkText"],
+        ["css=.top-nav li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nos produits')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './products/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nos produits')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f672fb01-0fb9-4f36-95c7-538f43dbe3db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-hero-copy > h1",
+      "targets": [
+        ["css=.product-hero-copy > h1", "css:finder"],
+        ["xpath=//div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Des produits pour vous aider au quotidien')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2633a12f-8548-49d6-a227-ef01995c8b3f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-hero-copy > h1",
+      "targets": [
+        ["css=.product-hero-copy > h1", "css:finder"],
+        ["xpath=//div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Des produits pour vous aider au quotidien')]", "xpath:innerText"]
+      ],
+      "value": "Des produits pour vous aider au quotidien"
+    }, {
+      "id": "eb49f162-39d9-4108-a8be-c30a3d8dd8c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Notre entreprise",
+      "targets": [
+        ["linkText=Notre entreprise", "linkText"],
+        ["css=.top-nav li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Notre entreprise')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './impact/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Notre entreprise')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ecf8ce5-e212-4435-9e9b-ca26bf02d60e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.local-copy:nth-child(1) > h1",
+      "targets": [
+        ["css=.local-copy:nth-child(1) > h1", "css:finder"],
+        ["xpath=//section/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Google en France, ce sont 1000 collaborateurs qui contribuent à la transformation numérique de la France et de ses entreprises.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fef03e13-ef0e-41a4-b3f5-f91ffeea5c8d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.local-copy:nth-child(1) > h1",
+      "targets": [
+        ["css=.local-copy:nth-child(1) > h1", "css:finder"],
+        ["xpath=//section/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Google en France, ce sont 1000 collaborateurs qui contribuent à la transformation numérique de la France et de ses entreprises.')]", "xpath:innerText"]
+      ],
+      "value": "Google en France, ce sont 1000 collaborateurs qui contribuent à la transformation numérique de la France et de ses entreprises."
+    }, {
+      "id": "49f301f9-34d6-44d7-9f2e-0b2e1fd0a2d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nos histoires",
+      "targets": [
+        ["linkText=Nos histoires", "linkText"],
+        ["css=.top-nav li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nos histoires')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './stories/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nos histoires')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42d35de3-e269-4df8-9183-c1e574e28be3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.video-spacer:nth-child(3) #mi-youtube-icon > path",
+      "targets": [
+        ["css=.video-spacer:nth-child(3) #mi-youtube-icon > path", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8ea85d0f-2ca9-47b4-b652-a2698d59951f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://ensup.eu/", "https://seleniumhq.github.io/selenium/docs/api/java/", "https://www.google.com/", "https://about.google/intl/fr_fr/"],
+  "plugins": []
+}
